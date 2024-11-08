@@ -17,7 +17,7 @@ jobs:
     - name: Checkout Private Repo (DataCollector)
       uses: actions/checkout@v2
       with:
-        repository: notifier-personal/DataCollector/
+        repository: notifier-personal/DataCollector
         token: ${{ secrets.CSD_PAT }}
         path: private-repo
 

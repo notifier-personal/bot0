@@ -1,6 +1,11 @@
 from library import *
 import os
 
+
+x = 3  # Starting row index (inclusive)
+y = 12  # Ending row index (exclusive)
+
+
 # Access secrets from environment variables
 repo_owner = os.getenv('REPO_OWNER')
 repo_name = os.getenv('REPO_NAME')
@@ -42,8 +47,7 @@ else:
 headers = data[0]
 
 # Define your range of rows to process (x to y)
-x = 1  # Starting row index (inclusive)
-y = 10  # Ending row index (exclusive)
+
 
 # Prepare accounts list dynamically, considering only rows x to y
 accounts = []

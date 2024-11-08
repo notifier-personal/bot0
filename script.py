@@ -49,15 +49,21 @@ headers = data[0]
 # Define your range of rows to process (x to y)
 
 
-# Prepare accounts list dynamically, considering only rows x to y
 accounts = []
 for row in data[x:y]:
     # Skip row if any cell is empty or only contains spaces
     if any(cell is None or str(cell).strip() == "" for cell in row):
         continue
 
+    # Skip row if "Status" is False
+    status_index = headers.index("Status")
+    if row[status_index] is False:
+        continue
+
+    # Add account to list if it passes both checks
     account = dict(zip(headers, row))
     accounts.append(account)
+    
 def refresh_account(account):
     username = account["Username"]
     password = account["Password"]

@@ -3,7 +3,7 @@ import os
 
 
 x = 3  # Starting row index (inclusive)
-y = 12  # Ending row index (exclusive)
+y = 15  # Ending row index (exclusive)
 
 
 # Access secrets from environment variables

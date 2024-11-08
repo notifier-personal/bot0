@@ -2,7 +2,7 @@ from library import *
 import os
 
 
-x = 2  # Starting row index (inclusive) Row starts from 0
+x = 2  # Starting row index (inclusive) Row starts from 0 x=2 means Row 3
 y = 15  # Ending row index (exclusive) 15 Row pomints to 14 row, but since it starts from 0 it points to 15 row
 
 
